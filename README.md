@@ -8,6 +8,12 @@ This docker is based on [this](https://hub.docker.com/r/aghorbani/docker-spark) 
 docker pull aghorbani/spark-anaconda:2.0.2-3.4
 ```
 
+## Build the image
+
+```
+docker build --rm -t aghorbani/spark-anaconda:2.0.2-3.4  .
+```
+
 ## Running the image
 
 ```
