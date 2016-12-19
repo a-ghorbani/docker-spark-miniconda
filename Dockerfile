@@ -3,10 +3,11 @@ MAINTAINER Asghar Ghorbani ghorbani59@gmail.com
 
 
 #Install Anaconda
-RUN curl -s https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh -o anaconda.sh
-RUN chmod a+x anaconda.sh
-RUN ./anaconda.sh -b -p /opt/anaconda3
-RUN /opt/anaconda3/bin/conda install -y -q ipython notebook
+RUN curl -s https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh -o anaconda.sh && \
+    chmod a+x anaconda.sh && \
+    ./anaconda.sh -b -p /opt/anaconda3 && \
+    rm ./anaconda && \
+    /opt/anaconda3/bin/conda install -y -q ipython notebook 
 
 #Environment vaiables for Spark to use Anaconda Python and iPython notebook
 ENV PYSPARK_PYTHON /opt/anaconda3/bin/python3
