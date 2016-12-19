@@ -1,5 +1,5 @@
 FROM aghorbani/spark:2.0.2
-MAINTAINER Asghar Ghorbani gorbani59@gmail.com
+MAINTAINER Asghar Ghorbani ghorbani59@gmail.com
 
 
 #Install Anaconda
