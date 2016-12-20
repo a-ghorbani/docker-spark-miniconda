@@ -1,4 +1,4 @@
-# Apache Spark+Anaconda on Docker 
+# Apache Spark+Miniconda on Docker 
 
 This docker is based on [this](https://hub.docker.com/r/aghorbani/docker-spark) spark 2 docker, and additionally installs miniconda.
 
