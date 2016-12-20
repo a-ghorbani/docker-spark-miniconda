@@ -18,7 +18,7 @@ RUN cd /tmp && \
     /bin/bash miniconda.sh -f -b -p $CONDA_DIR && \
     rm miniconda.sh && \
     $CONDA_DIR/bin/conda install --quiet --yes conda==4.2.12 && \
-    $CONDA_DIR/bin/conda install --quiet --yes conda-build==2.0* && \
+    $CONDA_DIR/bin/conda install --quiet --yes 'conda-build=2.0*' && \
     $CONDA_DIR/bin/conda config --system --add channels conda-forge && \
     $CONDA_DIR/bin/conda config --system --set auto_update_conda false && \
     conda clean -tipsy
