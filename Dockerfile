@@ -1,4 +1,4 @@
-FROM aghorbani/spark:2.0.2
+FROM aghorbani/spark:2.1.0
 MAINTAINER Asghar Ghorbani [https://de.linkedin.com/in/aghorbani]
 
 
